@@ -1,0 +1,91 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.content div {
+    margin: 1em;
+}
+
+.page {
+    border-style: none;
+    background-color : #EED;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFF;
+}
+
+@media print {
+    .content {
+        display: block;
+    }
+    .page {
+        page-break-inside: avoid;
+        page-break-after: always;
+        page-break-before: always;
+    }
+}
+.para {
+}
+.header {
+    color: #888;
+}
+.footer {
+    color: #888;
+}
+
+pre {
+    background-color : inherit;
+    border-style: none;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    top-padding: 0em;
+    bottom-padding: 0em;
+    font-size: 1rem;
+}
+
+a {
+    color: #008;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #408;
+}
+
+@media print {
+    .page {
+	background-color : #FFF;
+    }
+    .content {
+	background-color : #FFF;
+    }
+    body {
+	background-color : #FFF;
+    }
+    .sidebar {
+	display: none;
+    }
+}
+
+table.rfclist tbody:nth-child(even) {
+    background-color : #EED;
+}
+table.rfclist tbody:nth-child(odd) {
+    background-color : #EEC;
+}
+table.rfclist tbody {
+    border-style: solid hidden;
+    border-color: #FFF;
+}
+table.rfclist {
+    border-collapse: collapse;
+}
